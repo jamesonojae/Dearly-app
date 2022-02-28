@@ -20,14 +20,15 @@ const App: React.FC = () => {
     console.log(todo);
   return (
     <div className="App">
-      <span className="heading">Taskify</span>
+      <span className="heading">JiaTask-App</span>
         <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
         <TodoList todos={todos} setTodos={setTodos} />
-        {
+
+       {/* {
             todos && todos.map((t) => (
-                <li key={t.id}>{t.todo}</li>
+                <li key={t.id}>{t.todo}.,</li>
             ))
-        }
+        }*/}
     </div>
   );
 }
